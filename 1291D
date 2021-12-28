@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+typedef long long int ll;
+
+
+int main(){
+
+    // Re-arrange characters of string 's' to get string 't' => ANAGRAM
+    // 't' is an reducible anagram of 's' if k >= 2 exists each-sub part is also anagram and 's' and 't' are anagrams
+
+    string s;
+    cin >> s;
+    int q;
+    cin >> q;
+    while(q>0){
+        --q;
+        int l , r;
+        cin >> l >> r;
+        // TASK is to find if substring s[l...r] has an IRREDUCIBLE anagram
+        // Find a permutation of substring which is an IRR
+        // For all the combinations of partitions it must fail
+        // ALL that matters is frequency of alphabets
+        // No alpahbet in org place
+        // If all the characters are same then not possible
+        // If one alphabet is more than HALF of size then not possible!!!
+        // For each substring we make sure that above condition is hold
+    
+    }
+    return 0;
+}
